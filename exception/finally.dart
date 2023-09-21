@@ -4,8 +4,9 @@ void main() {
 
   try {
     result = i ~/ 0;
-  } catch (e) {
+  } catch (e, s) {
     print(e);
+  } finally {
+    print("finally!");
   }
-  // print("Result : ${result}");
 }
